@@ -1,0 +1,6 @@
+@SideProject_Transcation_HostAddress = http://localhost:5008
+
+GET {{SideProject_Transcation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
