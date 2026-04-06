@@ -118,10 +118,17 @@ function TransactionForm({ onAddTransaction, editingTransaction, onUpdateTransac
           onChange={handleChange}
         />
       </div>
-      <button type="submit">{editingTransaction ? "Update Transaction" : "Add Transaction"}</button>
-      {editingTransaction && (
-        <button type="button" onClick={onCancelEdit}>Cancel</button>
-      )}
+      <div style={{ display: "flex", gap: "10px" }}>
+  <button type="submit">
+    {editingTransaction ? "Update Transaction" : "Add Transaction"}
+  </button>
+
+  {editingTransaction && (
+    <button type="button" onClick={onCancelEdit}>
+      Cancel
+    </button>
+  )}
+</div>
     </form>
   );
 }
